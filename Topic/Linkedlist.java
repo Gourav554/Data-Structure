@@ -27,3 +27,4 @@ public class Linkedlist {
         System.out.print("NULL");
     }
 }
+

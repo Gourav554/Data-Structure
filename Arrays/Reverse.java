@@ -4,7 +4,7 @@ import java.util.*;
 public class Reverse {
     public static void main(String args[]) {
 
-        // Integer arr[] = {1, 2, 3, 4, 5}; // Integer use karo
+        Integer arr[] = {1, 2, 3, 4, 5}; // Integer use karo
 
         // List<Integer> list = Arrays.asList(arr);
         // Collections.reverse(list);
@@ -17,7 +17,7 @@ public class Reverse {
         while(left<right){
             int temp = arr[left];
             arr[left] = arr[right];
-            arr[right] = temp'
+            arr[right] = temp;
             left ++;
             right--;
         }

@@ -15,7 +15,7 @@ public class Largest_Element {
         int[] arr = {3, 5, 7, 2, 8};
     
        int result=findlargestElementn(arr);
-       System.out.println("largest:" + result);
+       System.out.println("largest:  " + result);
     }
 
 }

@@ -1,6 +1,8 @@
 
 
 public class Largest_Element {
+
+    //not a Inbuild function
     public static int findlargestElementn  (int arr[]){
     int largest = arr[0];
     for(int i=0;i<arr.length;i++){

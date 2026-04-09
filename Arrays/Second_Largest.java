@@ -5,6 +5,8 @@ public class Second_Largest {
         int seclargest = arr[1];
         for(int i=0;i<arr.length;i++){
             if(arr[i]>largest){
+                //arr[i] ki value large hogi to wo largest mai jaygi aur jo latgest wali hai wo second largest mai
+                seclargest = largest;
                 largest = arr[i];
             }
             else if (arr[i]>seclargest &&arr[i]!=largest){

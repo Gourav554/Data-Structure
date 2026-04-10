@@ -9,23 +9,23 @@ public static void main(String[] args) {
     int[] arr = {1, 2, 3, 4, 5};
     int target = 5;
     
-
-
     int  start =0;
     int  end = arr.length-1;
    while(start<=end){
-    int m = arr.length/2;
+    int m = (start + end) / 2;
 
     if(arr[m] ==target){
         System.out.println(m);
-        break;
+        return;
     }
     else if(arr[m]<target){
         start = m+1;
+       
     }
     else{
-        end = m-1
+        end = m-1;
     }
    }
+   System.out.println("Element not found");
 }
 }

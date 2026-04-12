@@ -1,4 +1,4 @@
-package Linkedlist;
+import java.util.*;
 
 public class Insert {
 
@@ -21,7 +21,7 @@ public class Insert {
         newNode.next = head;
         head = newNode;
     }
-    
+
 
     // Insert at Last
     public void insertAtLast(int data) {
@@ -75,11 +75,11 @@ public class Insert {
     }
 
     public static void main(String[] args) {
-        Insert list = new Insert();
-
+      Insert list = new Insert();
         list.insertAtBeginning(10);
         list.insertAtBeginning(5);
         list.insertAtLast(20);
+        list.insertAtLast(25);
         list.insertAtPosition(15, 3);
 
         list.printList();

@@ -22,7 +22,7 @@ public class Insert {
         head = newNode;
     }
 
-
+ 
     // Insert at Last
     public void insertAtLast(int data) {
         Node newNode = new Node(data);
@@ -80,7 +80,7 @@ public class Insert {
         list.insertAtBeginning(5);
         list.insertAtLast(20);
         list.insertAtLast(25);
-        list.insertAtPosition(15, 3);
+        list.insertAtPosition(15, 4);
 
         list.printList();
     }

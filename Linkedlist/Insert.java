@@ -21,6 +21,7 @@ public class Insert {
         newNode.next = head;
         head = newNode;
     }
+    
 
     // Insert at Last
     public void insertAtLast(int data) {

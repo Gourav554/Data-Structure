@@ -81,6 +81,7 @@ public class Insert {
         list.insertAtLast(20);
         list.insertAtLast(25);
         list.insertAtPosition(15, 4);
+        list.insertAtPosition(9, 03);
 
         list.printList();
     }

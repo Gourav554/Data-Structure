@@ -10,8 +10,9 @@ public class Delete {
             this.next = null;
         }
 
-        
-        
+        public static void main(String[] args) {
+           
+
     }
     
 }

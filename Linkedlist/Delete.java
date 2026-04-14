@@ -3,68 +3,124 @@ package Linkedlist;
 public class Delete {
 
     Node head;
-    class Node{
-        int Data;
-        Node next;
-        
 
-        Node(int data){
-            this.Data = data;
+    class Node {
+        int data;
+        Node next;
+
+        Node(int data) {
+            this.data = data;
             this.next = null;
         }
     }
-    //Insert at begnning
-    public void insertAtFirst(int data){
+
+
+
+    // Insert at beginning
+    public void insertAtFirst(int data) {
         Node newNode = new Node(data);
         newNode.next = head;
         head = newNode;
     }
-  
 
-    //Delete at First
-        public void deleteAtFirst(){
-            if(head == null){
-                System.out.println("Linkedlist is Empty");
-                return;
-            }
 
-            // head head ka next ho gaya hai
+
+    // Delete at First
+    public void deleteAtFirst() {
+        if (head == null) {
+            System.out.println("LinkedList is Empty");
+            return;
+        }
+        head = head.next;
+    }
+
+
+
+    // Delete at Last
+    public void deleteAtLast() {
+        if (head == null) {
+            System.out.println("Empty");
+            return;
+        }
+
+        if (head.next == null) {
+            head = null;
+            return;
+        }
+
+        Node temp = head;
+
+        while (temp.next.next != null) {
+            temp = temp.next;
+        }
+
+        temp.next = null; // ✅ correct place
+    }
+
+
+
+    // Delete at Position
+    public void deleteAtPosition(int position) {
+        if (head == null) {
+            System.out.println("Empty");
+            return;
+        }
+
+        if (position == 0) {
             head = head.next;
+            return;
         }
 
+        Node temp = head;
 
-
-      //Delete At Last
-        public void deleteAtLast(){
-            if(head == null){
-                System.out.println("Empty");
-              return;
-            }
-            if(head.next == null){
-                head =null;
+        for (int i = 0; i < position - 1; i++) {
+            if (temp == null || temp.next == null) {
+                System.out.println("Out of bound");
                 return;
             }
-             Node temp = head;
-
-             while(temp.next.next !=null){
-                temp = temp.next;
-             temp.next = null; 
+            temp = temp.next;
         }
+
+        if (temp.next == null) {
+            System.out.println("Out of bound");
+            return;
         }
-public void deleteAtPosition(int position){
-    if(head == null){
-        System.out.println("Empty");
-        return;
-    }
-    if( position ==1){
-        deleteAtFirst();
-        return;
-    }
-     Node head = this.head;
 
-        public static void main(String[] args) {
-           
-
+        temp.next = temp.next.next; 
     }
-    
+
+
+
+    // Print list
+    public void printList() {
+        Node temp = head;
+        while (temp != null) {
+            System.out.print(temp.data + " -> ");
+            temp = temp.next;
+        }
+        System.out.println("NULL");
+    }
+
+
+
+    public static void main(String[] args) {
+
+        Delete list = new Delete();
+
+        list.insertAtFirst(10);
+        list.insertAtFirst(20);
+        list.insertAtFirst(30);
+        list.insertAtFirst(40);
+
+        list.printList();
+
+        list.deleteAtFirst();
+        list.printList();
+
+        list.deleteAtLast();
+        list.printList();
+
+        list.deleteAtPosition(1);
+        list.printList();
+    }
 }

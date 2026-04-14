@@ -71,5 +71,6 @@ public class Search {
         list.printList();
 
         list.searchAtPosition(20);
+        list.searchAtPosition(60);
     }
 }

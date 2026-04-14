@@ -58,13 +58,15 @@ public class Search {
 
 
 
-    
+
     public static void main(String[] args) {
         Search list = new Search(); // ✅ correct class name
 
         list.insertAtBeginning(10);
         list.insertAtBeginning(20);
         list.insertAtBeginning(30);
+        list.insertAtBeginning(40);
+        list.insertAtBeginning(50);
 
         list.printList();
 

@@ -1,5 +1,5 @@
 
-import java.util.Array;
+import java.util.Arrays;
 
 class Remove_Duplicate {
     public static void main(String[] args) {
@@ -15,7 +15,7 @@ class Remove_Duplicate {
             }
         }
 
-        // Print unique elements
+        
         for (int i = 0; i <= j; i++) {
             System.out.print(nums[i] + " ");
         }

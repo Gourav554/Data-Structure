@@ -1,5 +1,5 @@
 
-import java.util.*;
+import java.util.Array;
 
 class Remove_Duplicate {
     public static void main(String[] args) {

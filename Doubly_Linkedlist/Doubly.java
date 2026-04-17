@@ -17,7 +17,7 @@ public class Doubly {
 
         // Add First Method
         public void addFirst(int data) {
-            Node newNode = new Node(data); // ✅ FIX HERE
+            Node newNode = new Node(data); 
 
             if (head == null) {
                 head = newNode;

@@ -16,7 +16,9 @@ public class Doubly {
     }
     class DoublyLinkedlist{
         Node head;
-        
+
+        //Add First Method
+        public void addFirst(int data)
     }
     }
 }

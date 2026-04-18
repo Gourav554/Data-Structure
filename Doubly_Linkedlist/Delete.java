@@ -17,5 +17,23 @@ public class Delete {
     Node head;
 
     //Delete first node
-    public 
-}
+     public void deleteFirst() {
+
+        // Case 1: Empty list
+        if (head == null) {
+            System.out.println("List is empty");
+            return;
+        }
+
+        // Case 2: Only one node
+        if (head.next == null) {
+            head = null;
+            return;
+        }
+
+        // Case 3: More than one node
+        head = head.next;
+        head.prev = null;
+    }
+    }
+

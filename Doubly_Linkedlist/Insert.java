@@ -51,6 +51,7 @@ class Inser{
         dll.addLast(10);
         dll.addLast(20);
         dll.addLast(30);
+        dill.addLast(5);
 
         dll.display();  // Output: 10 <-> 20 <-> 30 <-> null
     }

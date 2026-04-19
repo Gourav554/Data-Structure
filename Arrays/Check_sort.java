@@ -1,3 +1,4 @@
+import java.uti.Arrays;
 public class Check_sort {
     public static void main(String[] args){
         int  arr[] = {1,2,9,4,5,6};

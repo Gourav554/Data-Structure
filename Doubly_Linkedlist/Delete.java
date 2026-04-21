@@ -76,6 +76,7 @@ public class Delete {
         dll.addLast(10);
         dll.addLast(20);
         dll.addLast(30);
+        dll.addLast(40);
 
         System.out.println("Original list:");
         dll.display();  

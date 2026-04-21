@@ -36,7 +36,7 @@ public class Delete {
         head.prev = null;
     }
 
-    //Dlete at Last
+    //Delete at Last
      public void deleteLast() {
 
         // Case 1: Empty list

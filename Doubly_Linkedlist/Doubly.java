@@ -51,6 +51,7 @@ public class Doubly {
         dll.addFirst(10);
         dll.addFirst(20);
         dll.addFirst(30);
+        dll.addFirst(40);
 
         dll.printList();
     }

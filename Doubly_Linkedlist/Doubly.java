@@ -29,7 +29,7 @@ public class Doubly {
             newNode.next = head;
             head.prev = newNode;
 
-            // Update head
+            // Update head and new node's prev
             head = newNode;
         }
 

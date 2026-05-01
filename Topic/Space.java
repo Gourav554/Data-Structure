@@ -10,3 +10,7 @@ public class Space {
 
 // Input space (data given)
 // Auxiliary space (extra memory used by algorithm)
+
+
+
+

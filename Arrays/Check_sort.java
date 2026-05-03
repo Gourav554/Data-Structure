@@ -15,6 +15,5 @@ public class Check_sort {
             System.out.println("array is not sorted");
         }
     }
-    
 }
 

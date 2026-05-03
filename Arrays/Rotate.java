@@ -8,6 +8,8 @@ public class Rotate {
         reverse(arr,0,k-1);
         reverse(arr,k,arr.length-1);
         System.out.println(Arrays.toString(arr));
+
+        
         
     }
     

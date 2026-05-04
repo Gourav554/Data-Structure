@@ -20,6 +20,7 @@ public class Largest_Element {
 
 // int max = Collections.max(list);
 
+
     public static void main(String[] args) {
         int[] arr = {3, 5, 7, 2, 8};
     

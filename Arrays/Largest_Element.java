@@ -14,8 +14,6 @@ public class Largest_Element {
     }
         return largest;
     }
-
-
 // List<Integer> list = Arrays.asList(10, 5, 20, 8);
 
 // int max = Collections.max(list);
